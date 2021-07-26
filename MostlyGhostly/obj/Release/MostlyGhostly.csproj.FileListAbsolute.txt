@@ -1,0 +1,4 @@
+/Users/williampolk/Projects/MostlyGhostly/MostlyGhostly/obj/Release/MostlyGhostly.csproj.CoreCompileInputs.cache
+/Users/williampolk/Projects/MostlyGhostly/MostlyGhostly/obj/Release/MostlyGhostly.csproj.AssemblyReference.cache
+/Users/williampolk/Projects/MostlyGhostly/MostlyGhostly/bin/Release/MostlyGhostly.exe
+/Users/williampolk/Projects/MostlyGhostly/MostlyGhostly/obj/Release/MostlyGhostly.exe

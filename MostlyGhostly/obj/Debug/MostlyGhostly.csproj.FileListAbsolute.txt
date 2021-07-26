@@ -1,0 +1,6 @@
+/Users/williampolk/Projects/MostlyGhostly/MostlyGhostly/obj/Debug/MostlyGhostly.csproj.AssemblyReference.cache
+/Users/williampolk/Projects/MostlyGhostly/MostlyGhostly/obj/Debug/MostlyGhostly.csproj.CoreCompileInputs.cache
+/Users/williampolk/Projects/MostlyGhostly/MostlyGhostly/bin/Debug/MostlyGhostly.exe
+/Users/williampolk/Projects/MostlyGhostly/MostlyGhostly/bin/Debug/MostlyGhostly.pdb
+/Users/williampolk/Projects/MostlyGhostly/MostlyGhostly/obj/Debug/MostlyGhostly.exe
+/Users/williampolk/Projects/MostlyGhostly/MostlyGhostly/obj/Debug/MostlyGhostly.pdb
