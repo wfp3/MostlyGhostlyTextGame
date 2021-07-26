@@ -62,7 +62,7 @@ namespace MostlyGhostly
             Console.WriteLine("\"I guess I'd best hoof it from here on,\" you tell yourself rather optimistically.");
             Console.WriteLine(" ");
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Press 'Enter' to continue...I");
+            Console.WriteLine("Press 'Enter' to continue...");
             Console.ReadLine();
             Console.Clear();
             Console.ResetColor();
@@ -158,7 +158,7 @@ namespace MostlyGhostly
             }
         }
 
-        //CHAPTER 2
+        //CHAPTER 2 Dictionary with LINQ query
 
         public static void secondChapter()
         {
@@ -170,7 +170,7 @@ namespace MostlyGhostly
             scndCptrDict.Add("demands", "you answer three questions");
             scndCptrDict.Add("needs", "a puzzle solved");
 
-
+            //for (int i = 0; i < 1; ++i) can't be the best way to retrieve just one key/value, but it works...
             for (int i = 0; i < 1; ++i)
             {
                 int index = random.Next(scndCptrDict.Count);
