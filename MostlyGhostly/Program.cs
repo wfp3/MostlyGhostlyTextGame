@@ -221,33 +221,51 @@ namespace MostlyGhostly
         //Why does this 
 
         static void thirdChapter()
-    {
-
-        int guessThing;
-
-        Console.WriteLine("Third chapter hello");
-        Console.WriteLine("Third chapter situation");
-        Console.WriteLine("Third chapter guess");
-        Console.Write("Guess thing number: ");
-        int.TryParse(Console.ReadLine(), out guessThing);
-
-        while (guessThing < 100)
         {
-            Console.WriteLine("too low");
-            Console.WriteLine("guess higher");
+
+            int guessThing;
+
+            Console.WriteLine("Third chapter hello");
+            Console.WriteLine("Third chapter situation");
+            Console.WriteLine("Third chapter guess");
             Console.Write("Guess thing number: ");
             int.TryParse(Console.ReadLine(), out guessThing);
 
-            Console.WriteLine("Yes! It's that many!");
-            youWin();
+            while (guessThing < 100)
+            {
+                Console.WriteLine("too low");
+                Console.WriteLine("guess higher");
+                Console.Write("Guess thing number: ");
+                int.TryParse(Console.ReadLine(), out guessThing);
+
+                Console.WriteLine("Yes! It's that many!");
+                youWin();
+
+            }
+
+
 
         }
 
-
-
+        /*
+        class GhostAge
+    {
+        public static void Main(string[] args)
+        {
+            int YRS, M;
+            float Task, Check;
+            Console.Write("Enter age in years :");
+            YRS = Convert.ToInt32(Console.ReadLine());
+            M = YRS * 365;
+            Task = M * 3;
+            Check = Task / 12;
+            Console.WriteLine("Your time as a ghost feels like " + M + " years.");
+            Console.WriteLine("Your time to complete your unfinished business is :" + Task);
+            Console.WriteLine("A chief ghost will check on you every :" + Check + " ghost years.");
+        }
+     
     }
-
-
+        */
         //Chapter 3: while
 
         /* static void thirdChapter()
@@ -316,25 +334,60 @@ namespace MostlyGhostly
 
         public static void gameOver()
 
+        {
+            //Console.Clear();
+
+            Console.WriteLine("Choke, Gasp!! You die of shock from sheer terror!");
+            //Console.WriteLine("Bummer. ");
+            Thread.Sleep(3000);
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("But a wandering necromancer has offered to raise you from the dead.");
+            Console.WriteLine("press 'Enter' to try again.");
+            Console.ReadLine();
+            Console.Clear();
+            questFest();
+
+        }
+
+        public static void youWin()
+
+            //public class RandoFortune
+        /*
+
          {
+            Random rand = new Random();
+
+             string[] nounOne = { "rabbit", "soldier", "curlew", "robin", "widow" };
+             string[] nounTwo = { "hill", "mound", "land", "sea", "bridge", "clock" };
+             string[] verbOne = { "reigns", "lies", "eats", "runs", "catches", "trades" };
+             string[] rhymeOne = { "at the end", "the dead end", "with kin", "to spend", "to defend", "the weekend", "its friend" };
+             string[] adjOne = { "red", "blue", "green", "orange" };
+             string[] nounThree = { "cat", "dog" };
+             string[] rhymeTwo = { "portend", "impend", "amend", "ascend", "miswend" };
+
+             int n1Index = rand.Next(nounOne.Length);
+             int n2Index = rand.Next(nounTwo.Length);
+             int v1Index = rand.Next(verbOne.Length);
+             int rh1Index = rand.Next(rhymeOne.Length);
+             int adj1Index = rand.Next(adjOne.Length);
+             int n3Index = rand.Next(nounThree.Length);
+             int rh2Index = rand.Next(rhymeTwo.Length);
+
+            Console.WriteLine("The {0}", nounOne[n1Index] + " on the {0}", nounTwo[n2Index],  verbOne[v1Index], rhymeOne[rh1Index] + ",");
+            Console.WriteLine("While the {0}", adjOne[adj1Index], nounThree[n3Index]); //+ "shall {0}", rhymeTwo[rh2Index] ) + ".");
+
+        }
+         //index = rand.Next(nounOne.Length);
+         //Console.WriteLine($"Randomly selected noun is {nounOne[index]}");
+
+            //The (nounOne) on the (nounTwo)(verbOne)(rhymeOne), While the (adjOne)(nounThree) shall (rhymeTwo).
+
+     }*/
+     }
+ }
+
              //Console.Clear();
-
-             Console.WriteLine("Choke, Gasp!! You died of shock from sheer terror!");
-             Thread.Sleep(3000);
-             Console.WriteLine();
-             Console.WriteLine();
-             Console.WriteLine("But a wandering necromancer has offered to raise you from the dead.");
-             Console.WriteLine("press 'Enter' to try again.");
-             Console.ReadLine();
-             Console.Clear();
-             questFest();
-
-         }
-
-         public static void youWin()
-         {
-
-             Console.Clear();
              Console.WriteLine(" ");
              Console.WriteLine("Congratulations! You escape!");
              Console.WriteLine(" ");
@@ -368,4 +421,4 @@ namespace MostlyGhostly
              questFest();
          }
      }
-    }
+}
