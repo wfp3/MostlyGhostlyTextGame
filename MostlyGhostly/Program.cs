@@ -305,7 +305,8 @@ namespace MostlyGhostly
 
 
 //Endgame
-
+public class Endgame
+{ //may have nesting issues here--a whole bunch of errors disappeared when i removed the closing brace...
 public static void gameOver()
 { 
         {
