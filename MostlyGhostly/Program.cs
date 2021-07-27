@@ -8,41 +8,45 @@ namespace MostlyGhostly
     class Program
     {
 
-
         public static void Main(string[] args)
         {
             Title();
             questFest();
 
         }
+
+
         //Title
+        //All ASCII text was generated from an app at: http://www.network-science.de/ascii/
         public static void Title()
         {
             Console.Title = "Mostly Ghostly";
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
             string title = @"                                
-@@@@@@@@@@    @@@@@@    @@@@@@   @@@@@@@  @@@       @@@ @@@  
-@@@@@@@@@@@  @@@@@@@@  @@@@@@@   @@@@@@@  @@@       @@@ @@@  
-@@! @@! @@!  @@!  @@@  !@@         @@!    @@!       @@! !@@  
-!@! !@! !@!  !@!  @!@  !@!         !@!    !@!       !@! @!!  
-@!! !!@ @!@  @!@  !@!  !!@@!!      @!!    @!!        !@!@!   
-!@!   ! !@!  !@!  !!!   !!@!!!     !!!    !!!         @!!!   
-!!:     !!:  !!:  !!!       !:!    !!:    !!:         !!:    
-:!:     :!:  :!:  !:!      !:!     :!:     :!:        :!:    
-:::     ::   ::::: ::  :::: ::      ::     :: ::::     ::    
- :      :     : :  :   :: : :       :     : :: : :     :     
-                                                             
                                                                      
- @@@@@@@@  @@@  @@@   @@@@@@    @@@@@@   @@@@@@@  @@@       @@@ @@@  
-@@@@@@@@@  @@@  @@@  @@@@@@@@  @@@@@@@   @@@@@@@  @@@       @@@ @@@  
-!@@        @@!  @@@  @@!  @@@  !@@         @@!    @@!       @@! !@@  
-!@!        !@!  @!@  !@!  @!@  !@!         !@!    !@!       !@! @!!  
-!@! @!@!@  @!@!@!@!  @!@  !@!  !!@@!!      @!!    @!!        !@!@!   
-!!! !!@!!  !!!@!!!!  !@!  !!!   !!@!!!     !!!    !!!         @!!!   
-:!!   !!:  !!:  !!!  !!:  !!!       !:!    !!:    !!:         !!:    
-:!:   !::  :!:  !:!  :!:  !:!      !:!     :!:     :!:        :!:    
- ::: ::::  ::   :::  ::::: ::  :::: ::      ::     :: ::::     ::    
- :: :: :    :   : :   : :  :   :: : :       :     : :: : :     :     ";
+         @@@@@@@@@@    @@@@@@    @@@@@@   @@@@@@@  @@@       @@@ @@@  
+         @@@@@@@@@@@  @@@@@@@@  @@@@@@@   @@@@@@@  @@@       @@@ @@@  
+         @@! @@! @@!  @@!  @@@  !@@         @@!    @@!       @@! !@@  
+         !@! !@! !@!  !@!  @!@  !@!         !@!    !@!       !@! @!!  
+         @!! !!@ @!@  @!@  !@!  !!@@!!      @!!    @!!        !@!@!   
+         !@!   ! !@!  !@!  !!!   !!@!!!     !!!    !!!         @!!!   
+         !!:     !!:  !!:  !!!       !:!    !!:    !!:         !!:    
+         :!:     :!:  :!:  !:!      !:!     :!:     :!:        :!:    
+         :::     ::   ::::: ::  :::: ::      ::     :: ::::     ::    
+          :      :     : :  :   :: : :       :     : :: : :     :     
+                                                                      
+                                                                          
+      @@@@@@@@  @@@  @@@   @@@@@@    @@@@@@   @@@@@@@  @@@       @@@ @@@  
+     @@@@@@@@@  @@@  @@@  @@@@@@@@  @@@@@@@   @@@@@@@  @@@       @@@ @@@  
+     !@@        @@!  @@@  @@!  @@@  !@@         @@!    @@!       @@! !@@  
+     !@!        !@!  @!@  !@!  @!@  !@!         !@!    !@!       !@! @!!  
+     !@! @!@!@  @!@!@!@!  @!@  !@!  !!@@!!      @!!    @!!        !@!@!   
+     !!! !!@!!  !!!@!!!!  !@!  !!!   !!@!!!     !!!    !!!         @!!!   
+     :!!   !!:  !!:  !!!  !!:  !!!       !:!    !!:    !!:         !!:    
+     :!:   !::  :!:  !:!  :!:  !:!      !:!     :!:     :!:        :!:    
+      ::: ::::  ::   :::  ::::: ::  :::: ::      ::     :: ::::     ::    
+      :: :: :    :   : :   : :  :   :: : :       :     : :: : :     :     
+                                                                          ";
 
             Console.WriteLine(title);
             Console.ResetColor();
@@ -51,7 +55,7 @@ namespace MostlyGhostly
 
         }
 
-        //Introduction
+        //Introduction: WriteLine with switches
 
         public static void questFest()
         {
@@ -65,12 +69,10 @@ namespace MostlyGhostly
             Console.WriteLine("Press 'Enter' to continue...");
             Console.ReadLine();
             Console.Clear();
-            Console.ResetColor();
-            firstChapter();
-
         }
 
         //Chapter 1: switch & WriteLine
+
         public static void firstChapter()
         {
             string choice;
@@ -92,6 +94,7 @@ namespace MostlyGhostly
             Console.ResetColor();
             Console.Clear();
 
+            // cases take a variety of phrases as input and display a default message if input is different than the cases.
             switch (choice)
             {
                 case "1":
@@ -159,6 +162,8 @@ namespace MostlyGhostly
         }
 
         //CHAPTER 2 Dictionary with LINQ query
+        //    Using LINQ ElementAt to retrieve a key-value pair from a dictionary.
+
 
         public static void secondChapter()
         {
@@ -167,10 +172,10 @@ namespace MostlyGhostly
 
             scndCptrDict.Add("asks", "for a ride");
             scndCptrDict.Add("is sobbing", "grievously");
-            scndCptrDict.Add("demands", "you answer three questions");
+            scndCptrDict.Add("demands", "you guess her age at death");
             scndCptrDict.Add("needs", "a puzzle solved");
 
-            //for (int i = 0; i < 1; ++i) can't be the best way to retrieve just one key/value, but it works...
+            //for (int i = 0; i < 1; ++i) can't be the best way to retrieve just one key/value, but it works.
             for (int i = 0; i < 1; ++i)
             {
                 int index = random.Next(scndCptrDict.Count);
@@ -178,14 +183,7 @@ namespace MostlyGhostly
 
                 Console.WriteLine("The ghost " + item.Key + " " + item.Value + ".");
             }
-            //Random rnd = new Random();
-            //array with indexes
-            //string[] scndChOptions = { "\"I forgot to leave my shawl on the back seat of the last car to give me a ride.\" she says.",
-            // "\"The last person to give me a ride was bald, and his hair didn't suddenly and mysteriously turn gray after dropping me off\" she wails. ",
-            // "\"My boyfriend lost his hook in the door of a car when it drove off,\" she bemoans.",
-            // "\"I thought today was the anniversary of my death, but it's my birthday instead.\" she sobs, explaining that her parents won't be home to receive the shawl she left on the seat of her last ride." };
-            //int RandomNumber = rnd.Next(0, 4);
-            //string secText = scndChOptions[RandomNumber];
+      
 
             string secChoice;
             //Changing Console.WriteLine(secText); from version 1.2
@@ -202,7 +200,7 @@ namespace MostlyGhostly
             else if (secChoice == "no" || secChoice == "n")
             {
                 Console.WriteLine("Your actions are cowardly and despicable, or at least careless.");
-                Console.WriteLine("The cosmic implications of this one minor mistake weigh upon you as a massive stellar collapse upon spacetime.");
+                Console.WriteLine("The cosmic implications of this one minor mistake weigh upon you as a massive stellar collapse weighs upon spacetime.");
                 Console.WriteLine("Press 'Enter' to continue");
                 Console.ReadLine();
                 gameOver();
@@ -218,62 +216,41 @@ namespace MostlyGhostly
 
         }
 
-        //Why does this 
-
-        static void thirdChapter()
+      
+        
+        public static void purgatory()
         {
-
-            int guessThing;
-
-            Console.WriteLine("Third chapter hello");
-            Console.WriteLine("Third chapter situation");
-            Console.WriteLine("Third chapter guess");
-            Console.Write("Guess thing number: ");
-            int.TryParse(Console.ReadLine(), out guessThing);
-
-            while (guessThing < 100)
-            {
-                Console.WriteLine("too low");
-                Console.WriteLine("guess higher");
-                Console.Write("Guess thing number: ");
-                int.TryParse(Console.ReadLine(), out guessThing);
-
-                Console.WriteLine("Yes! It's that many!");
-                youWin();
-
-            }
-
-
-
-        }
-
-        /*
-        class GhostAge
-    {
-        public static void Main(string[] args)
-        {
-            int YRS, M;
+            int YRS, GY;
             float Task, Check;
-            Console.Write("Enter age in years :");
+                Console.Write("You suddenly find yourself somewhat transparent and with a hunger for ectoplasm.");
+                Console.Write("\"Great Scott! You've ghosted me,\" you decry to the Phantom Hitchhiker.");
+                Console.Write("\"Yes,\" she replies with phantom menace, \"You must complete a task in one-seventh of your age in ghost-years while \n " +
+                    "a ghost supervisor checks on you once a ghost year.");
+
+                Console.Write("Enter age in years :");
             YRS = Convert.ToInt32(Console.ReadLine());
-            M = YRS * 365;
-            Task = M * 3;
+            GY = YRS * 100;
+            Task = GY / 7;
             Check = Task / 12;
-            Console.WriteLine("Your time as a ghost feels like " + M + " years.");
-            Console.WriteLine("Your time to complete your unfinished business is :" + Task);
-            Console.WriteLine("A chief ghost will check on you every :" + Check + " ghost years.");
+            Console.WriteLine("Your time as a ghost feels like " + GY + " years.");
+            Console.WriteLine("Your time to complete your unfinished business is :" + Task + " ghost years.");
+            Console.WriteLine("A ghost supervisor will check on you every :" + Check + " ghost years.");
+            Thread.Sleep(3000);
+            youWin();
         }
      
-    }
-        */
+     
+        
         //Chapter 3: while
 
-        /* static void thirdChapter()
+        static void thirdChapter()
          {
              {
                  Console.WriteLine("you're at ch3");
                  int guessAge = new Random().Next(18, 27);
-                 Console.WriteLine("guess my age");
+                 Console.WriteLine("\"How old,\" the ghost beseeches you, \"do you think I was when I tragically died?\"");
+                 Thread.Sleep(1500);
+                 Console.WriteLine("\"I was somewhere from 18 to 27,\" she adds in an ethereal aside.");
                  int allowedGuesses = 3;
                  int numberOfGuesses = 0;
 
@@ -283,9 +260,9 @@ namespace MostlyGhostly
                      numberOfGuesses++;
                      if (guess == guessAge)
                      {
-                         Console.WriteLine("Just right");
+                         Console.WriteLine("I was {guessAge} when I died along this abandoned stretch of road.");
                          break;
-                         //youWin();
+                         youWin();
                      }
                      if (guess > guessAge)
                      {
@@ -300,45 +277,44 @@ namespace MostlyGhostly
                          Console.WriteLine($"\"My age was {guessAge} when I died!\" she wails.");
                          Console.WriteLine("Her visiage suddenly becomes morbidly bizarre .");
                          Console.WriteLine("\"Didn't you read my obituary in the March 23rd, 1894 issue of the Gazetteville Picayune-Journal?!?!!\" she screams eldrichly.");
-                         gameOver();
+                        //gameOver();
+                        purgatory();
                          break;
 
                      }
                      Console.Write($"You have {allowedGuesses - numberOfGuesses} guesses left. Guess again: ");
                  }
              }
-         }
-
-         private static int GetGuess()
-         {
-             int guess = 0;
-             try
-             {
-                 guess = Convert.ToInt32(Console.ReadLine());
-             }
-             catch (Exception)
-             {
-                 Console.WriteLine("You did not enter a valid guess.");
-                 guess = GetGuess();
-             }
-             return guess;
-         }
-
-
-     }
-
- }*/
+        }
+        private static int GetGuess()
+        {
+            int guess = 0;
+            try
+            {
+                guess = Convert.ToInt32(Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("You did not enter a valid guess.");
+                guess = GetGuess();
+            }
+            return guess;
+        }
+    }
+}
 
 
-        //Endgame
+//Endgame
 
-        public static void gameOver()
-
+public static void gameOver()
+{ 
         {
             //Console.Clear();
 
             Console.WriteLine("Choke, Gasp!! You die of shock from sheer terror!");
-            //Console.WriteLine("Bummer. ");
+            Console.WriteLine();
+            Thread.Sleep(1500);
+            Console.WriteLine("Bummer.");
             Thread.Sleep(3000);
             Console.WriteLine();
             Console.WriteLine();
@@ -349,11 +325,12 @@ namespace MostlyGhostly
             questFest();
 
         }
+}
 
-        public static void youWin()
+public static void youWin()
 
             //public class RandoFortune
-        /*
+        
 
          {
             Random rand = new Random();
@@ -374,20 +351,16 @@ namespace MostlyGhostly
              int n3Index = rand.Next(nounThree.Length);
              int rh2Index = rand.Next(rhymeTwo.Length);
 
-            Console.WriteLine("The {0}", nounOne[n1Index] + " on the {0}", nounTwo[n2Index],  verbOne[v1Index], rhymeOne[rh1Index] + ",");
-            Console.WriteLine("While the {0}", adjOne[adj1Index], nounThree[n3Index]); //+ "shall {0}", rhymeTwo[rh2Index] ) + ".");
+            Console.WriteLine("The {0} on the {1} {2} {3}", nounOne[n1Index], nounTwo[n2Index], verbOne[v1Index], rhymeOne[rh1Index] + ",");
+            Console.WriteLine("While the {0} {1} shall {2}", adjOne[adj1Index], nounThree[n3Index], rhymeTwo[rh2Index] + ".");
 
         }
-         //index = rand.Next(nounOne.Length);
-         //Console.WriteLine($"Randomly selected noun is {nounOne[index]}");
 
-            //The (nounOne) on the (nounTwo)(verbOne)(rhymeOne), While the (adjOne)(nounThree) shall (rhymeTwo).
-
-     }*/
      }
- }
+     }
+ 
 
-             //Console.Clear();
+             Console.Clear();
              Console.WriteLine(" ");
              Console.WriteLine("Congratulations! You escape!");
              Console.WriteLine(" ");
@@ -405,7 +378,11 @@ namespace MostlyGhostly
         \ \__\ \ \__\ \__\ \_______\       \ \_______\ \__\\ \__\ \_______\
          \|__|  \|__|\|__|\|_______|        \|_______|\|__| \|__|\|_______|";
              Console.WriteLine(theEnd);
+
+
              Thread.Sleep(3000);
+             Console.WriteLine(" ");
+             Console.WriteLine(" ");
              Console.ForegroundColor = ConsoleColor.DarkCyan;
              string coda = @"
    @@@@@@  @@@@@@@       @@@  @@@@@@      @@@ @@@@@@@           @@@@@@ 
@@ -422,3 +399,6 @@ namespace MostlyGhostly
          }
      }
 }
+            Console.ResetColor();
+            firstChapter();
+
