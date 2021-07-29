@@ -8,6 +8,6 @@ In gameplay, the dictionary and LINQ features are displayed in a randomly select
 
 The conversion tool appears if the player fails to guess the ghost's age and asks for the user to input their age, then converts that age to "ghost age," "years to complete unfinished business," and "frequency of ghost supervisor visits."
 
-Options 1. "dark woods" and 2."spooky house" lead straight to "gameOver" and answering negatively ("no" or returning a false value) also leads to gameOver. The exception to this is the conversion tool in class "Purgatory."
+Options 1. "dark woods" and 2."spooky house" lead straight to "gameOver" and answering negatively ("no" or returning a false value) also leads to gameOver. The exception to this is the conversion tool in "public static void purgatory."
 
 
