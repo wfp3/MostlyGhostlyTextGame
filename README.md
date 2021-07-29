@@ -10,4 +10,8 @@ The conversion tool appears if the player fails to guess the ghost's age and ask
 
 Options 1. "dark woods" and 2."spooky house" lead straight to "gameOver" and answering negatively ("no" or returning a false value) also leads to gameOver. The exception to this is the conversion tool in "public static void purgatory."
 
+The path to winning the game is through option 3/hitchhiker, answer "yes" to her request for help, then correctly guess her randomly-generated age. Incorrectly guessing her age leads to the conversion tool, which then eventually leads to the "win" screen.
+
+The win screen generates a random bit of doggerel from a series of arrays as a prize.
+
 
