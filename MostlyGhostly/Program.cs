@@ -15,7 +15,8 @@ namespace MostlyGhostly
 
         }
 
-
+        //TEST MESSAGE for 7-29 final commit
+       
         //Title
         //All ASCII text was generated from an app at: http://www.network-science.de/ascii/
         public static void Title()
@@ -55,7 +56,7 @@ namespace MostlyGhostly
 
         }
 
-        //Introduction: WriteLine with switches
+        
 
         public class QuestFest
         {
@@ -70,7 +71,7 @@ namespace MostlyGhostly
                 Console.WriteLine(
                     "\"I guess I'd best hoof it from here on,\" you tell yourself rather optimistically.");
                 Console.WriteLine(" ");
-                Console.ForegroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Press 'Enter' to continue...");
                 Console.ReadLine();
                 Console.Clear();
@@ -78,7 +79,7 @@ namespace MostlyGhostly
                 firstChapter();
             }
 
-            //Chapter 1: switch & WriteLine
+            //Chapter 1: switches, WriteLines
 
             public static void firstChapter()
             {
@@ -104,7 +105,7 @@ namespace MostlyGhostly
                 Console.ResetColor();
                 Console.Clear();
 
-                // cases take a variety of phrases as input and display a default message if input is different than the cases.
+                // cases take a variety of strings as input and display a default message if input is different than the cases.
                 switch (choice)
                 {
                     case "1":
@@ -170,7 +171,9 @@ namespace MostlyGhostly
                             Console.WriteLine(
                                 "I didn't understand that command. Try using the selection number or keywords from the prompt.");
                             Console.WriteLine(" ");
+                            Console.ForegroundColor = ConsoleColor.Yellow;
                             Console.WriteLine("Press 'Enter' to try again.");
+                            Console.ResetColor();
                             Console.ReadLine();
                             firstChapter();
                             break;
@@ -188,7 +191,7 @@ namespace MostlyGhostly
                 Random random = new Random();
                 Dictionary<string, string> scndCptrDict = new Dictionary<string, string>();
 
-                scndCptrDict.Add("wishes", "for your help");
+                scndCptrDict.Add("asks", "for your help");
                 scndCptrDict.Add("is sobbing", "grievously");
                 scndCptrDict.Add("demands", "you guess her age at death");
                 scndCptrDict.Add("needs", "a puzzle solved");
@@ -204,12 +207,14 @@ namespace MostlyGhostly
 
 
                 string secChoice;
-              
+               
                 Console.WriteLine("Will you help her?");
-                Console.Write(" ");
-                Console.Write("Choice: ");
+                Console.WriteLine(" ");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Choice: ");
+                Console.ResetColor();
                 secChoice = Console.ReadLine().ToLower();
-
+                
                 if (secChoice == "yes" || secChoice == "y")
                 {
                     thirdChapter();
@@ -220,7 +225,11 @@ namespace MostlyGhostly
                     Console.WriteLine("Your actions are cowardly and despicable, or at least careless.");
                     Console.WriteLine(
                         "The cosmic implications of this one minor mistake weigh upon you as a massive stellar collapse weighs upon spacetime.");
+                    Console.WriteLine(" ");
+                    Console.WriteLine(" ");
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("Press 'Enter' to continue");
+                    Console.ResetColor();
                     Console.ReadLine();
                     Endgame.gameOver();
                 }
@@ -228,9 +237,11 @@ namespace MostlyGhostly
                 else
                 {
                     Console.WriteLine(
-                        "I didn't understand that command. Try using the selection number or keywords from the prompt");
+                        "I didn't understand that command. Try using: yes/ no, y/n.");
                     Console.Write(" ");
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("Press 'Enter' to try again.");
+                    Console.ResetColor();
                     Console.ReadLine();
                     secondChapter();
                 }
@@ -243,12 +254,16 @@ namespace MostlyGhostly
             static void thirdChapter()
             {
                 {
-                    Console.WriteLine("you're at ch3");
+                    Console.WriteLine("The ghost explains that she likes guessing games.");
                     int guessAge = new Random().Next(18, 27);
-                    Console.WriteLine(
-                        "\"How old,\" the ghost beseeches you, \"do you think I was when I tragically died?\"");
-                    Thread.Sleep(1500);
+                    Console.WriteLine("\"How old,\" she beseeches you, \"do you think I was when I tragically died?");
+                    Console.WriteLine("\"You have three chances to guess my age correctly\"");
+                    Thread.Sleep(2000);
                     Console.WriteLine("\"I was somewhere from 17 to 27,\" she adds in an ethereal aside.");
+                    Thread.Sleep(1500);
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("Your first guess: ");
+                    Console.ResetColor();
                     int allowedGuesses = 3;
                     int numberOfGuesses = 0;
 
@@ -280,10 +295,10 @@ namespace MostlyGhostly
                             Console.WriteLine(" ");
                             Console.WriteLine(" ");
 
-                            Console.WriteLine($"\"My age was {guessAge} when I died!\" she wails.");
+                            Console.WriteLine($"\"I was {guessAge} when I died!\" she wails.");
 
                             Console.WriteLine();
-                            Console.WriteLine("Her visiage suddenly becomes morbidly bizarre .");
+                            Console.WriteLine("Her visiage suddenly becomes morbidly bizarre.");
                             Console.WriteLine(
                              "\"Didn't you read my obituary in the March 23rd, 1894 issue of the Gazetteville Picayune-Journal?!?!!\" she screams eldrichly.");
              
@@ -324,20 +339,23 @@ namespace MostlyGhostly
             Console.WriteLine("You suddenly find yourself somewhat transparent and with a hunger for ectoplasm.");
             Console.WriteLine("\"Great Scott! You've ghosted me,\" you decry to the Phantom Hitchhiker.");
             Console.WriteLine(
-                "\"Yes,\" she replies with phantom menace, \"You must complete a task in one-seventh of your age in ghost-years");
-            Console.WriteLine("(each ghost-year is like one hundred mortal years) ");
-            Console.WriteLine(" while a ghost supervisor checks on you twice a ghost year.");
+                "\"Yes,\" she replies with phantom menace, \"you must complete a task in one-seventh of your age in ghost-years");
+            Console.WriteLine("(each ghost-year is like one hundred mortal years).");
+            Console.WriteLine("A ghost supervisor will make thirteen visits to you to check on your progress.\"");
             Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Enter age in years :");
             Console.WriteLine(" ");
+            Console.ResetColor();
             YRS = Convert.ToInt32(Console.ReadLine());
-            //this formula may not match the narration formula, but it's meant to.
+            //this formula may not actually match the formula described in the narration.
             GY = YRS * 100;
             Task = GY / 7;
-            Check = Task / 2 * 12;
+            Check = Task / 13;
             Console.WriteLine("Your time as a ghost feels like " + GY + " years.");
-            Console.WriteLine("Your time to complete your unfinished business is :" + Task + " ghost years.");
-            Console.WriteLine("A ghost supervisor will check on you every :" + Check + " ghost years.");
+            Console.WriteLine("Your time to complete your unfinished business is: " + Task + " ghost years.");
+            Console.WriteLine("You must report to ghost management every " + Check + " ghost years.");
             Thread.Sleep(4000);
             Console.WriteLine(" ");
             Console.ForegroundColor = ConsoleColor.Yellow;
@@ -345,26 +363,34 @@ namespace MostlyGhostly
             Console.ReadLine();
             Console.Clear();
             Console.ResetColor();
+           
             Endgame.youWin();
         }
 
 
         public class Endgame
-        { //may have nesting issues here--a whole bunch of errors disappeared when i removed the closing brace...
+        { 
             public static void gameOver()
             {
                 {
                     //Console.Clear();
-
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Choke, Gasp!! You die of shock from sheer terror!");
-                    Console.WriteLine();
+                    Console.ResetColor();
+                    //Console.ReadLine();
+                  
                     Thread.Sleep(1500);
+                    Console.WriteLine(" ");
                     Console.WriteLine("Bummer.");
                     Thread.Sleep(3000);
-                    Console.WriteLine();
-                    Console.WriteLine();
+                    Console.WriteLine(" ");
+                    Console.WriteLine(" ");
                     Console.WriteLine("But a wandering necromancer has offered to raise you from the dead.");
-                    Console.WriteLine("press 'Enter' to try again.");
+                    Console.WriteLine(" ");
+                    Console.WriteLine(" ");
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("Press 'Enter' to try again.");
+                    Console.ResetColor();
                     Console.ReadLine();
                     Console.Clear();
                     QuestFest.questFest();
@@ -372,7 +398,7 @@ namespace MostlyGhostly
                 }
             }
 
-
+            //a series of string arrays randomly called into a Mad Lib-type sentence to generate a random fortune.
 
             public class RandomFortune
             {
@@ -386,7 +412,7 @@ namespace MostlyGhostly
                     string[] rhymeOne =
                         {"at the end", "the dead end", "with kin", "to spend", "to defend", "the weekend", "its friend"};
                     string[] adjOne = { "dark", "loud", "mean", "coy", "yellow","blue", "red", "lax", "apt", "wry"};
-                    string[] nounThree = {"dog","goat", "bird", "lamb" };
+                    string[] nounThree = {"dog","goat", "bird", "lamb", "bat", "hedgehog" };
                     string[] rhymeTwo = { "portend", "impend", "amend", "ascend", "miswend" };
 
                     int n1Index = rand.Next(nounOne.Length);
@@ -422,7 +448,7 @@ namespace MostlyGhostly
                 Console.ForegroundColor = ConsoleColor.Red;
                 RandomFortune.ShowFortune();
                 Console.ResetColor();
-                Thread.Sleep(5000);
+                Thread.Sleep(6000);
                 Console.WriteLine(" ");
                 Console.WriteLine("You walk away, certain that life will return to the way it was before this horror began.");
                 Thread.Sleep(2500);
